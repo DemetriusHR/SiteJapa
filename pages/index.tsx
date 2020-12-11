@@ -1,8 +1,9 @@
 import Layout from "../components/Layout";
+import IndexContainer from "../containers/index";
 
 const IndexPage = () => (
   <Layout title="Início">
-    <h1>Hello Next.js 👋</h1>
+    <IndexContainer />
   </Layout>
 );
 
