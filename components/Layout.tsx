@@ -56,7 +56,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
         />
       </Head>
       <GlobalStyle />
-      <button className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none'}}>
+      <button className="scrollTop p-4 right-8 bottom-8 fixed rounded-full bg-gray-300 hover:bg-gray-200" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none'}}>
         <UpOutlined />
       </button>
       <Header title={title} />

@@ -8,18 +8,21 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.1.0",
+    "@ant-design/icons": "^4.3.0",
+    "framer-motion": "^2.9.5",
     "next": "latest",
-    "next-images": "^1.4.0",
+    "next-images": "^1.6.2",
     "postcss-cli": "^7.1.1",
     "postcss-preset-env": "^6.7.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "styled-components": "^5.1.0",
-    "tailwindcss": "^1.4.6",
     "react-compare-image": "^3.0.2",
-    "react-focus-lock": "^2.4.1",
-    "react-scroll": "^1.8.1"
+    "react-dom": "^16.12.0",
+    "react-focus-lock": "^2.5.0",
+    "react-images": "^1.1.7",
+    "react-photo-gallery": "^8.0.0",
+    "react-scroll": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",

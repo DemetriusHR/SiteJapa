@@ -1,9 +1,16 @@
 import Layout from "../components/Layout";
+import SobreContainer from "../containers/sobre";
 
 const SobrePage = () => (
   <Layout title="Sobre">
-    <h1>Sobre</h1>
-    <p>This is the Sobre page</p>
+    <link
+      id="font-css-link"
+      rel="stylesheet"
+      media="all"
+      type="text/css"
+      href="//cdn-sites-static.46graus.com/css/build/fonts/pack3.css?1103"
+    ></link>
+    <SobreContainer />
   </Layout>
 );
 
