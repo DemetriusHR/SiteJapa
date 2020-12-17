@@ -1,0 +1,92 @@
+export const photos = [
+  {
+    src: require("./imgs/basquete.jpg"),
+    width: 8,
+    height: 4,
+    title: `"Basquete"`,
+  },
+  {
+    src: require("./imgs/basquete2.jpg"),
+    width: 8,
+    height: 6,
+    title: `"Basquete"`,
+  },
+  {
+    src: require("./imgs/basquete3.jpg"),
+    width: 8,
+    height: 6,
+    title: `"Basquete"`,
+  },
+  {
+    src: require("./imgs/bicicleta.jpg"),
+    width: 8,
+    height: 6,
+    title: `"Bicicleta"`,
+  },
+  {
+    src: require("./imgs/desconhecido.jpg"),
+    width: 8,
+    height: 6,
+    title: `"Desconhecido"`,
+  },
+  {
+    src: require("./imgs/moldura.jpg"),
+    width: 3,
+    height: 1,
+    title: `"Moldura"`,
+  },
+  {
+    src: require("./imgs/igreja.jpg"),
+    width: 5,
+    height: 3,
+    title: `"Igreja"`,
+  },
+  {
+    src: require("./imgs/por-do-sol_mulher.jpg"),
+    width: 4,
+    height: 1,
+    title: `"Pôr do Sol"`,
+  },
+  {
+    src: require("./imgs/por-do-sol_moto.jpg"),
+    width: 2,
+    height: 1,
+    title: `"Pôr do Sol"`,
+  },
+  {
+    src: require("./imgs/por-do-sol.jpg"),
+    width: 5,
+    height: 3,
+    title: `"Pôr do Sol"`,
+  },
+  {
+    src: require("./imgs/por-do-sol-2.jpg"),
+    width: 5,
+    height: 3,
+    title: `"Pôr do Sol"`,
+  },
+  {
+    src: require("./imgs/por-do-sol-3.jpg"),
+    width: 5,
+    height: 3,
+    title: `"Pôr do Sol"`,
+  },
+  {
+    src: require("./imgs/homem-e-bicicleta.jpg"),
+    width: 6,
+    height: 3,
+    title: `"Homem na bicicleta"`,
+  },
+  {
+    src: require("./imgs/escada.jpg"),
+    width: 5,
+    height: 3,
+    title: `"Escada"`,
+  },
+  {
+    src: require("./imgs/bandeira.jpg"),
+    width: 5,
+    height: 3,
+    title: `"BraZil"`,
+  },
+];

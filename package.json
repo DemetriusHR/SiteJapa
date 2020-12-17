@@ -20,6 +20,7 @@
     "react-focus-lock": "^2.5.0",
     "react-images": "^1.1.7",
     "react-photo-gallery": "^8.0.0",
+    "react-player": "^2.7.2",
     "react-scroll": "^1.8.1",
     "styled-components": "^5.2.1",
     "tailwindcss": "^2.0.2"

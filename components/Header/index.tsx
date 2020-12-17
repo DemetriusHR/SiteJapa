@@ -1,4 +1,10 @@
-import React, { ReactNode, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { useOnClickOutside } from "../../hooks/useOnClickOutside";
@@ -51,16 +57,38 @@ const Header = ({ title = "This is the default title" }: Props) => {
 
   const verificaMenu = useCallback(
     (nav: string) => {
-      return nav === title ? "active" : "";
+      if (nav === title) {
+        return "active";
+      }
+
+      if (nav === "Portfolio") {
+        console.log(title);
+        switch (title) {
+          case "AudioVisual":
+            return "active";
+          case "Fotografando Ideias":
+            return "active";
+          case "Fotografando o Mundo":
+            return "active";
+          case "Fotografando Pessoas":
+            return "active";
+          case "Olhar além do celular":
+            return "active";
+          default:
+            break;
+        }
+      }
+
+      return "";
     },
     [title]
   );
 
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'initial';
+      document.body.style.overflow = "initial";
     }
   }, [open]);
 

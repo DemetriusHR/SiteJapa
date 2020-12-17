@@ -44,6 +44,29 @@ const GlobalStyle = createGlobalStyle`
     transition: opacity 0.4s;
   }
 
+  .react-photo-gallery--gallery {
+    > div {
+      > img {
+        :hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+
+  .video-config {
+    > div {
+      width: 100% !important;
+      height: 12rem !important;
+    }
+  }
+  
+  .video-config-olhar {
+    > div {
+      width: 100% !important;
+      height: calc(100vh - 20rem) !important;
+    }
+  }
 
   @keyframes fadeIn {
     0% {

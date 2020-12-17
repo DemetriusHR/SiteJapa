@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const EuImg = require("./imgs/eu.jpg");
 
@@ -25,14 +26,24 @@ const SobreWrapper = styled.div`
   }
 `;
 
+const variants = {
+  hidden: { opacity: 0, y: -2 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const SobreContainer: React.FC = () => (
   <SobreWrapper className="px-16">
     <div className="py-8" />
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
-      <div>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <img src={EuImg} className="w-60 m-auto" alt="Foto do João Witor" />
-      </div>
-      <article className="col-span-2">
+      </motion.div>
+      <motion.article
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        className="col-span-2"
+      >
         <h3 className="font-extrabold uppercase mb-4">Quem é João Witor?</h3>
         <p className="mb-4">
           Desde os 12 anos sendo um curioso por edição e se especializando cada
@@ -44,8 +55,13 @@ const SobreContainer: React.FC = () => (
           Resumindo, publicitário que nas horas vagas trabalha.
         </p>
         <p>Meu curriculo você encontra no LinkedIn.</p>
-      </article>
-      <ul className="flex flex-col">
+      </motion.article>
+      <motion.ul
+        className="flex flex-col"
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+      >
         <li className="mb-6">
           <a
             className="flex link flex-col md:flex-row"
@@ -162,7 +178,7 @@ const SobreContainer: React.FC = () => (
             </div>
           </a>
         </li>
-      </ul>
+      </motion.ul>
     </div>
     <div className="py-8" />
   </SobreWrapper>

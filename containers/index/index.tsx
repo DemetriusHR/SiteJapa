@@ -16,23 +16,16 @@ const imagemSeisDepois = require("./imgs/6_depois.jpg");
 const imagemSeteAntes = require("./imgs/7_antes.jpg");
 const imagemSeteDepois = require("./imgs/7_depois.jpg");
 
-const postVariants = {
-  initial: { scale: 0.96, y: 30, opacity: 0 },
-  enter: { scale: 1, y: 0, opacity: 1, transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] } },
-  exit: {
-    scale: 0.6,
-    y: 100,
-    opacity: 0,
-    transition: { duration: 0.2, ease: [0.48, 0.15, 0.25, 0.96] }
-  }
+const variants = {
+  hidden: { opacity: 0, y: -2 },
+  visible: { opacity: 1, y: 0 },
 };
-
 
 const IndexContainer: React.FC = () => (
   <div className="px-32">
     <div className="py-8" />
     <div className="md:w-6/12 margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemUmAntes}
           leftImageLabel="Antes"
@@ -44,7 +37,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemDoisAntes}
           leftImageLabel="Antes"
@@ -56,7 +49,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemTresAntes}
           leftImageLabel="Antes"
@@ -68,7 +61,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="md:w-6/12 margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemQuatroAntes}
           leftImageLabel="Antes"
@@ -80,7 +73,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="md:w-6/12 margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemCincoAntes}
           leftImageLabel="Antes"
@@ -92,7 +85,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemSeisAntes}
           leftImageLabel="Antes"
@@ -104,7 +97,7 @@ const IndexContainer: React.FC = () => (
     </div>
     <div className="py-8" />
     <div className="md:w-6/12 margin-center">
-      <motion.div variants={postVariants}>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
         <ReactCompareImage
           leftImage={imagemSeteAntes}
           leftImageLabel="Antes"
