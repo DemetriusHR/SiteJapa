@@ -34,7 +34,8 @@ const GalleryPhotos: React.FC<IGalleryPhotos> = ({ photos }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = useCallback((_, { photo, index }) => {
+    console.log(photo);
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
