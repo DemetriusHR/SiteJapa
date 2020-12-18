@@ -22,7 +22,7 @@ const variants = {
 };
 
 const IndexContainer: React.FC = () => (
-  <div className="px-32">
+  <div className="px-4 md:px-32">
     <div className="py-8" />
     <div className="md:w-6/12 margin-center">
       <motion.div initial="hidden" animate="visible" variants={variants}>
